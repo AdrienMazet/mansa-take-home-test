@@ -1,10 +1,13 @@
-import React from 'react';
+import { render, screen } from "@testing-library/react";
+import Main from "./Main";
+
+const myWebsiteContent = "My website content"
+
 describe('Main', () => {
-  // it('renders a heading', () => {
-  //   render(<Home />)
-  //   const heading = screen.getByRole('heading', {
-  //     name: /welcome to next\.js!/i,
-  //   })
-  //   expect(heading).toBeInTheDocument()
-  // })
+  it('renders the main content', () => {
+    render(<Main><p>{myWebsiteContent}</p></Main>)
+    const main = screen.getByRole("main")
+    expect(main).toBeInTheDocument()
+    expect(main).toHaveTextContent(myWebsiteContent)
+  })
 });
