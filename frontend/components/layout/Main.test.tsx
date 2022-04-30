@@ -1,17 +1,17 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen } from '../../test-utils';
 import Main from './Main';
 
-const myWebsiteContent = 'My website content';
+const myPageContent = 'My page content';
 
 describe('Main', () => {
   it('renders the main content', () => {
     render(
       <Main>
-        <p>{myWebsiteContent}</p>
+        <p>{myPageContent}</p>
       </Main>,
     );
     const main = screen.getByRole('main');
     expect(main).toBeInTheDocument();
-    expect(main).toHaveTextContent(myWebsiteContent);
+    expect(main).toHaveTextContent(myPageContent);
   });
 });
