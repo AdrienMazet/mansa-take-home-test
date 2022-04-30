@@ -1,10 +1,10 @@
-import React from 'react';
+import { render, screen } from "@testing-library/react";
+import Header from './Header';
+
 describe('Header', () => {
-  // it('renders a heading', () => {
-  //   render(<Home />)
-  //   const heading = screen.getByRole('heading', {
-  //     name: /welcome to next\.js!/i,
-  //   })
-  //   expect(heading).toBeInTheDocument()
-  // })
+  it('renders Mansa logo', () => {
+    render(<Header />)
+    const logo = screen.getByAltText("Logo de Mansa")
+    expect(logo).toBeInTheDocument()
+  })
 });
