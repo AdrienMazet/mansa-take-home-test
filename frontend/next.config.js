@@ -2,10 +2,10 @@
 module.exports = {
   reactStrictMode: true,
   i18n: {
-    locales: ["en"],
-    defaultLocale: "en",
+    locales: ['en'],
+    defaultLocale: 'en',
   },
   compiler: {
     styledComponents: true,
   },
-}
+};

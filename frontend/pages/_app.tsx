@@ -13,7 +13,7 @@ body {
   flex-direction: column;
   height: 100vh;
 }
-`
+`;
 
 const Mansa = ({ Component, pageProps }: AppProps) => (
   <>
@@ -24,9 +24,11 @@ const Mansa = ({ Component, pageProps }: AppProps) => (
     </Head>
     <GlobalStyle />
     <ThemeProvider theme={theme}>
-    <Layout>
-      <Component {...pageProps} />
-    </Layout></ThemeProvider></>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </ThemeProvider>
+  </>
 );
 
 export default Mansa;
