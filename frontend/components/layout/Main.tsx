@@ -1,11 +1,18 @@
 import { ReactNode } from "react";
+import styled from "styled-components";
 
 type MainProps = {
   children: ReactNode;
 };
 
-const Main: React.FC<MainProps> = ({ children }) => <main style={{ backgroundColor: '#F9F9F9', paddingLeft: 50, flexGrow: 1 }}>
-  {children}
-</main>
+const Main = styled.main`
+background-color: ${({ theme }) => theme.colors.mainBackgroundColor};
+padding-left: 50px;
+flex-grow: 1;
+`
 
-export default Main
+const myMain: React.FC<MainProps> = ({ children }) => <Main>
+  {children}
+</Main>
+
+export default myMain

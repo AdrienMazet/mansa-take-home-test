@@ -1,13 +1,13 @@
 import type { NextPage } from 'next';
 
 // TODO
-// Header (layout) : test + styled components
+// Format everything
+// Header (layout) : test (jest+cypress) & Styled components
 // User details : API + Comp + + test + responsive + accessibility + perf
 // Company details : API Siren + Comp + + test + responsive + accessibility + perf
 // Accounts : API + Comp + + test + responsive + accessibility + perf
 // utilisation du SSR au lieu du SSG car les données d'un dashboard changent souvent
 // https://nextjs.org/docs/testing
-// https://github.com/vercel/next.js/tree/canary/examples/with-styled-components
 
 type HomeProps = {
   data: any;

@@ -1,11 +1,13 @@
 import Image from 'next/image';
+import styled from 'styled-components';
 import logo from '../../public/logo_mansa.png';
 
-const Header = () => <header style={{
-    padding: '15px 0px 15px 50px',
-    borderBottom: '1px solid #EEEBFA',
-  }}
->
+const Header = styled.header`
+  padding: 15px 0px 15px 50px;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.headerBorderColor};
+`
+
+const myHeader = () => <Header>
   <Image
     priority
     src={logo}
@@ -14,6 +16,6 @@ const Header = () => <header style={{
     width={115}
     quality={100}
   />
-</header>
+</Header>
 
-export default Header
+export default myHeader
