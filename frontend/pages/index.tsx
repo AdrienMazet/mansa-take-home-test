@@ -1,12 +1,15 @@
 import UserDetails from '@/components/user-details';
 import type { NextPage } from 'next';
+import { getUser } from 'services/user';
+import styled from 'styled-components';
 
 // TODO
-// User details : API + test + responsive + accessibility + perf + extract to function
+// User details : test
 // Company details : API Siren + Comp + + test + responsive + accessibility + perf
 // Accounts : CSS table + API + Comp + + test + responsive + accessibility + perf
-// utilisation du SSR au lieu du SSG car les données d'un dashboard changent souvent
-// tester la page !
+// Pour accounts : clientSide fetching avec hook car les données changent souvent
+// check hook swr
+// tester la page index.tsx !
 // avant de livrer : readme, lint, test & deploy
 
 type HomeProps = {
@@ -14,16 +17,18 @@ type HomeProps = {
 };
 
 export const getServerSideProps = async () => {
-  const res = await fetch(`https://randomuser.me/api`);
-  const data = await res.json();
-  const { first, last } = data.results[0].name;
-  return { props: { user: { firstName: first, lastName: last } } };
+  const user = await getUser();
+  return { props: { user } };
 };
 
+const Container = styled.div`
+  margin-top: 25px;
+`;
+
 const Home: NextPage<HomeProps> = ({ user }) => (
-  <div style={{ marginTop: '25px' }}>
+  <Container>
     <UserDetails user={user} />
-  </div>
+  </Container>
 );
 
 export default Home;
