@@ -1,5 +1,5 @@
-import { render, screen } from '../../test-utils';
 import Layout from '.';
+import { render, screen } from '../../test-utils';
 
 const myPageContent = 'My page content';
 

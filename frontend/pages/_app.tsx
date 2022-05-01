@@ -1,7 +1,7 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
-import MansaThemeProvider from '../styles';
 import Layout from '../components/layout';
+import MansaThemeProvider from '../styles';
 
 const Mansa = ({ Component, pageProps }: AppProps) => (
   <>
