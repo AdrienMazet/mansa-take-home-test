@@ -4,7 +4,7 @@ import logo from '../../public/logo_mansa.png';
 
 const StyledHeader = styled.header`
   padding: 15px 0px 15px 50px;
-  border-bottom: 1px solid ${({ theme }) => theme.colors.headerBorderColor};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.headerBorder};
 `;
 
 const Header = () => (

@@ -9,13 +9,15 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  font-family: Arial;
 }
 `;
 
 const theme = {
   colors: {
-    headerBorderColor: '#EEEBFA',
-    mainBackgroundColor: '#F9F9F9',
+    text: '#183753',
+    headerBorder: '#EEEBFA',
+    mainBackground: '#F9F9F9',
   },
 };
 
