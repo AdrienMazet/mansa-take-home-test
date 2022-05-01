@@ -1,13 +1,10 @@
 import type { NextPage } from 'next';
 
 // TODO
-// Format everything
-// Header (layout) : test (jest+cypress) & Styled components
 // User details : API + Comp + + test + responsive + accessibility + perf
 // Company details : API Siren + Comp + + test + responsive + accessibility + perf
 // Accounts : API + Comp + + test + responsive + accessibility + perf
 // utilisation du SSR au lieu du SSG car les données d'un dashboard changent souvent
-// https://nextjs.org/docs/testing
 
 type HomeProps = {
   data: any;
