@@ -13,10 +13,7 @@ body {
 `;
 
 const theme = {
-  colors: {
-    headerBorderColor: '#EEEBFA',
-    mainBackgroundColor: '#F9F9F9',
-  },
+  colors: {},
 };
 
 type MansaThemeProviderProps = {
