@@ -8,7 +8,7 @@ type MainProps = {
 const StyledMain = styled.main`
   flex-grow: 1;
   padding-left: 50px;
-  background-color: ${({ theme }) => theme.colors.mainBackgroundColor};
+  background-color: ${({ theme }) => theme.colors.mainBackground};
 `;
 
 const Main: React.FC<MainProps> = ({ children }) => (
