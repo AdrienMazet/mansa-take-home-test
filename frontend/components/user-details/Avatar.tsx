@@ -13,7 +13,7 @@ const StyledAvatar = styled.span`
 `;
 
 const Avatar: React.FC<AvatarProps> = ({ children }) => (
-  <StyledAvatar>{children}</StyledAvatar>
+  <StyledAvatar data-cy="Avatar">{children}</StyledAvatar>
 );
 
 export default Avatar;

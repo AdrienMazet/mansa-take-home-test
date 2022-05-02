@@ -9,7 +9,7 @@ const StyledHeading = styled.h1`
 `;
 
 const Username: React.FC<UsernameProps> = ({ username }) => (
-  <StyledHeading>{username}</StyledHeading>
+  <StyledHeading data-cy="Username">{username}</StyledHeading>
 );
 
 export default Username;
