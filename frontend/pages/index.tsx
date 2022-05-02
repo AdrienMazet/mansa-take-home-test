@@ -3,6 +3,14 @@ import type { NextPage } from 'next';
 import { getUser } from 'services/user';
 import styled from 'styled-components';
 
+// TODO
+// Company details : API Siren + Comp + + test + responsive + accessibility + perf
+// Accounts : CSS table + API + Comp + + test + responsive + accessibility + perf
+// Pour accounts : clientSide fetching avec hook car les données changent souvent
+// check hook swr
+// tester la page index.tsx et_app.tsx ? !
+// avant de livrer : readme, lint, test & deploy + check coverage
+
 type HomeProps = {
   user: User;
 };
