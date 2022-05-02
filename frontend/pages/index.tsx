@@ -1,4 +1,4 @@
-import UserDetails from '@/components/user-details';
+import UserDetails from 'components/user-details';
 import type { NextPage } from 'next';
 import { getUser } from 'services/user';
 import styled from 'styled-components';
