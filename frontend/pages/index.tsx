@@ -10,7 +10,7 @@ import styled from 'styled-components';
 // Pour accounts : clientSide fetching avec hook car les données changent souvent
 // check hook swr
 // tester la page index.tsx et_app.tsx ? !
-// avant de livrer : readme, lint, test & deploy
+// avant de livrer : readme, lint, test & deploy + check coverage
 
 type HomeProps = {
   user: User;
