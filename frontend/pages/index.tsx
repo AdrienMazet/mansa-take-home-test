@@ -4,7 +4,6 @@ import { getUser } from 'services/user';
 import styled from 'styled-components';
 
 // TODO
-// User details : test
 // Company details : API Siren + Comp + + test + responsive + accessibility + perf
 // Accounts : CSS table + API + Comp + + test + responsive + accessibility + perf
 // Pour accounts : clientSide fetching avec hook car les données changent souvent
