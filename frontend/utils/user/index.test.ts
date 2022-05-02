@@ -22,8 +22,8 @@ describe('getFormattedFullName', () => {
     ['Louis Philippe', '1er', '1ER Louis Philippe'],
   ])(
     'return correct initials from firstName %p and lastName %p : %p',
-    (firstName, lastName, initials) => {
-      expect(getFormattedFullName(firstName, lastName)).toBe(initials);
+    (firstName, lastName, fullname) => {
+      expect(getFormattedFullName(firstName, lastName)).toBe(fullname);
     },
   );
 });
