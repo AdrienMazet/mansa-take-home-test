@@ -9,7 +9,7 @@ import styled from 'styled-components';
 // Accounts : CSS table + API + Comp + + test + responsive + accessibility + perf
 // Pour accounts : clientSide fetching avec hook car les données changent souvent
 // check hook swr
-// tester la page index.tsx !
+// tester la page index.tsx et_app.tsx ? !
 // avant de livrer : readme, lint, test & deploy
 
 type HomeProps = {
