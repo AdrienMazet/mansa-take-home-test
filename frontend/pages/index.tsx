@@ -6,11 +6,12 @@ import { getUser } from 'services/user';
 import styled from 'styled-components';
 
 // TODO
-// Company details : Comp + test(unit&e2e) + responsive + accessibility + perf
+// Company details : test(unit&e2e)
 // Accounts : CSS table + API + Comp + + test + responsive + accessibility + perf
 // Pour accounts : clientSide fetching avec hook car les données changent souvent
 // check hook swr
 // tester la page index.tsx et_app.tsx ? !
+// faire des mocks server side avec cypress ?
 // avant de livrer : readme, lint, test & deploy + check coverage
 // extract main page container ?
 
