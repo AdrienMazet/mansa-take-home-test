@@ -5,12 +5,13 @@ export const getBusiness = async () => {
     `https://entreprise.data.gouv.fr/api/sirene/v3/unites_legales/${VERTICAL_ART_SIREN}`,
   );
   const data = await res.json();
-  const { siren, denomination, date_creation, etablissement_siege } =
+  const { denomination, date_creation, etablissement_siege } =
     data.unite_legale;
+  const { siret, geo_adresse } = etablissement_siege;
   return {
-    siren,
+    siret,
     name: denomination,
     creationDate: date_creation,
-    address: etablissement_siege.geo_adresse,
+    address: geo_adresse,
   } as Business;
 };

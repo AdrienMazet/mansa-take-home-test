@@ -1,5 +1,5 @@
 type Business = {
-  siren: number;
+  siret: number;
   name: string;
   creationDate: string;
   address: string;
