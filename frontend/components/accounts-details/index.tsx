@@ -1,12 +1,12 @@
 import styled from 'styled-components';
-import Heading from '../section/Heading';
+import SectionHeading from '../section/SectionHeading';
 import AccountCard from './AccountCard';
 
 type AccountsDetailsProps = {
   accounts: Account[];
 };
 
-const AccountsGrid = styled.div`
+const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
@@ -15,12 +15,12 @@ const AccountsGrid = styled.div`
 
 const AccountsDetails: React.FC<AccountsDetailsProps> = ({ accounts }) => (
   <section>
-    <Heading heading="Accounts" />
-    <AccountsGrid>
+    <SectionHeading heading="Accounts" />
+    <Grid>
       {accounts.map((account) => (
         <AccountCard key={account.account_number} account={account} />
       ))}
-    </AccountsGrid>
+    </Grid>
   </section>
 );
 

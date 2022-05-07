@@ -1,22 +1,22 @@
 import styled from 'styled-components';
-import Heading from '../section/Heading';
+import SectionHeading from '../section/SectionHeading';
 
 type BusinessDetailsProps = {
   business: Business;
 };
 
-const StyledText = styled.p`
+const Text = styled.p`
   margin: 10px 0px;
   color: ${({ theme }) => theme.colors.text};
 `;
 
 const BusinessDetails: React.FC<BusinessDetailsProps> = ({ business }) => (
   <section>
-    <Heading heading="Company" />
-    <StyledText>Name: {business.name}</StyledText>
-    <StyledText>SIRET: {business.siret}</StyledText>
-    <StyledText>Creation: {business.creationDate}</StyledText>
-    <StyledText>Address: {business.address}</StyledText>
+    <SectionHeading heading="Company" />
+    <Text>Name: {business.name}</Text>
+    <Text>SIRET: {business.siret}</Text>
+    <Text>Creation: {business.creationDate}</Text>
+    <Text>Address: {business.address}</Text>
   </section>
 );
 

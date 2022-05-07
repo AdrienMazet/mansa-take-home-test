@@ -18,6 +18,9 @@ const theme = {
     text: '#183753',
     headerBorder: '#EEEBFA',
     mainBackground: '#F9F9F9',
+    accountCardBackground: '#f5f3fb',
+    accountCardBorder: '#cfc7f0',
+    accountCardText: '#6c52d4',
   },
 };
 

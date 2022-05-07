@@ -4,12 +4,12 @@ type UsernameProps = {
   username: string;
 };
 
-const StyledHeading = styled.h1`
+const Heading = styled.h1`
   color: ${({ theme }) => theme.colors.text};
 `;
 
 const Username: React.FC<UsernameProps> = ({ username }) => (
-  <StyledHeading data-cy="Username">{username}</StyledHeading>
+  <Heading data-cy="Username">{username}</Heading>
 );
 
 export default Username;

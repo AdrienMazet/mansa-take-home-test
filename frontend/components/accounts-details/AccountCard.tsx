@@ -4,36 +4,39 @@ type AccountCardProps = {
   account: Account;
 };
 
-const StyledCard = styled.div`
+const Card = styled.div`
   padding: 15px 20px;
-  background-color: rgb(245, 243, 251);
-  border: 1px solid #cfc7f0;
+  background-color: ${({ theme }) => theme.colors.accountCardBackground};
+  border: 1px solid ${({ theme }) => theme.colors.accountCardBorder};
   border-radius: 5px;
 `;
 
-const StyledTextContainer = styled.div`
+const CardContent = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 `;
 
-const StyledText = styled.p`
-  color: #6c52d4;
-  margin: 5px 0px;
+const Text = styled.p`
+  margin: 5px 5px;
+  color: ${({ theme }) => theme.colors.accountCardText};
+`;
+
+const StrongText = styled(Text)`
+  font-weight: bold;
 `;
 
 const AccountCard: React.FC<AccountCardProps> = ({ account }) => (
-  <StyledCard>
-    <StyledTextContainer>
-      <StyledText style={{ fontWeight: 'bold' }}>Account number:</StyledText>
-      <StyledText style={{ fontWeight: 'bold' }}>
-        {account.account_number}
-      </StyledText>
-    </StyledTextContainer>
-    <StyledTextContainer>
-      <StyledText>Balance:</StyledText>
-      <StyledText>{`${account.available} ${account.currency}`}</StyledText>
-    </StyledTextContainer>
-  </StyledCard>
+  <Card>
+    <CardContent>
+      <StrongText>Account number:</StrongText>
+      <StrongText>{account.account_number}</StrongText>
+    </CardContent>
+    <CardContent>
+      <Text>Balance:</Text>
+      <Text>{`${account.available} ${account.currency}`}</Text>
+    </CardContent>
+  </Card>
 );
 
 export default AccountCard;

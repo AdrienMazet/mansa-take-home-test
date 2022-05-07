@@ -5,14 +5,14 @@ type MainProps = {
   children: ReactNode;
 };
 
-const StyledMain = styled.main`
+const MainContent = styled.main`
   flex-grow: 1;
   padding: 0px 50px;
   background-color: ${({ theme }) => theme.colors.mainBackground};
 `;
 
 const Main: React.FC<MainProps> = ({ children }) => (
-  <StyledMain>{children}</StyledMain>
+  <MainContent>{children}</MainContent>
 );
 
 export default Main;

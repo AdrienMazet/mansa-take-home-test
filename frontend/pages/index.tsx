@@ -8,7 +8,7 @@ import { getUser } from 'services/user';
 import styled from 'styled-components';
 
 // TODO
-// Accounts : CSS table + Comp + + test + responsive + accessibility + perf
+// Accounts : test unit & test e2e
 // Pour accounts : pagination pour custom hook ?
 // check hook swr
 
@@ -35,18 +35,18 @@ export const getServerSideProps = async () => {
   return { props: { user, business, accounts } };
 };
 
-const StyledContainer = styled.div`
+const Container = styled.div`
   > * {
     margin-top: 30px;
   }
 `;
 
 const Home: NextPage<HomeProps> = ({ user, business, accounts }) => (
-  <StyledContainer>
+  <Container>
     <UserDetails user={user} />
     <BusinessDetails business={business} />
     <AccountsDetails accounts={accounts} />
-  </StyledContainer>
+  </Container>
 );
 
 export default Home;
