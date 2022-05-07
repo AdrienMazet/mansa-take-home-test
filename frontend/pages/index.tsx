@@ -16,17 +16,17 @@ export const getServerSideProps = async () => {
   return { props: { user, business } };
 };
 
-const Container = styled.div`
+const StyledContainer = styled.div`
   > * {
     margin-top: 30px;
   }
 `;
 
 const Home: NextPage<HomeProps> = ({ user, business }) => (
-  <Container>
+  <StyledContainer>
     <UserDetails user={user} />
     <BusinessDetails business={business} />
-  </Container>
+  </StyledContainer>
 );
 
 export default Home;

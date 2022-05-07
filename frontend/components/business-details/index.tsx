@@ -9,8 +9,8 @@ const StyledHeading = styled.h2`
 `;
 
 const StyledText = styled.p`
-  color: ${({ theme }) => theme.colors.text};
   margin: 10px 0px;
+  color: ${({ theme }) => theme.colors.text};
 `;
 
 const BusinessDetails: React.FC<BusinessDetailsProps> = ({ business }) => (
