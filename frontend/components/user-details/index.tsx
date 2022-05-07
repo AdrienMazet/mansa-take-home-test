@@ -7,17 +7,17 @@ type UserDetailsProps = {
   user: User;
 };
 
-const StyledSection = styled.section`
+const Section = styled.section`
   display: flex;
   align-items: center;
   column-gap: 15px;
 `;
 
 const UserDetails: React.FC<UserDetailsProps> = ({ user }) => (
-  <StyledSection>
+  <Section>
     <Avatar>{getInitials(user.firstName, user.lastName)}</Avatar>
     <Username username={getFormattedFullName(user.firstName, user.lastName)} />
-  </StyledSection>
+  </Section>
 );
 
 export default UserDetails;

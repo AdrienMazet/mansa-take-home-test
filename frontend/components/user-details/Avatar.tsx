@@ -5,7 +5,7 @@ type AvatarProps = {
   children: ReactNode;
 };
 
-const StyledAvatar = styled.span`
+const Container = styled.span`
   border-radius: 50%;
   padding: 10px;
   color: white;
@@ -13,7 +13,7 @@ const StyledAvatar = styled.span`
 `;
 
 const Avatar: React.FC<AvatarProps> = ({ children }) => (
-  <StyledAvatar data-cy="Avatar">{children}</StyledAvatar>
+  <Container data-cy="Avatar">{children}</Container>
 );
 
 export default Avatar;
