@@ -1,5 +1,5 @@
 type Account = {
   account_number: string;
-  available: string;
+  available: number;
   currency: string;
 };
