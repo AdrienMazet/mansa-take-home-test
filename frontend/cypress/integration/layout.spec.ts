@@ -1,5 +1,3 @@
-/// <reference types="cypress" />
-
 describe('Layout', () => {
   beforeEach(() => cy.visit('/'));
   it('should display a header', () => {

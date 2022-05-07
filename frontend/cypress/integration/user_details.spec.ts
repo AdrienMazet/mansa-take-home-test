@@ -1,5 +1,3 @@
-/// <reference types="cypress" />
-
 // Use of cy.get('...') on data-cy attributes
 // Normally I would have mocked the API call to retrieve user details
 // And used cy.get('...') on the expected text content (initials, fullname)
