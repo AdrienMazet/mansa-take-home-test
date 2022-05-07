@@ -1,12 +1,9 @@
 import styled from 'styled-components';
+import Heading from '../section/Heading';
 
 type BusinessDetailsProps = {
   business: Business;
 };
-
-const StyledHeading = styled.h2`
-  color: ${({ theme }) => theme.colors.text};
-`;
 
 const StyledText = styled.p`
   margin: 10px 0px;
@@ -15,7 +12,7 @@ const StyledText = styled.p`
 
 const BusinessDetails: React.FC<BusinessDetailsProps> = ({ business }) => (
   <section>
-    <StyledHeading>Company</StyledHeading>
+    <Heading heading="Company" />
     <StyledText>Name: {business.name}</StyledText>
     <StyledText>SIRET: {business.siret}</StyledText>
     <StyledText>Creation: {business.creationDate}</StyledText>
