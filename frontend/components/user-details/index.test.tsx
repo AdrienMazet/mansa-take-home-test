@@ -2,7 +2,7 @@ import { getFormattedFullName, getInitials } from 'utils/user';
 import UserDetails from '.';
 import { render, screen } from '../../test-utils';
 
-const myUser = { firstName: 'Adrien', lastName: 'Mazet' };
+const myUser: User = { firstName: 'Adrien', lastName: 'Mazet' };
 
 describe('UserDetails', () => {
   beforeEach(() => render(<UserDetails user={myUser} />));
