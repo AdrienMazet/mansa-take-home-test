@@ -7,7 +7,7 @@ type MainProps = {
 
 const StyledMain = styled.main`
   flex-grow: 1;
-  padding-left: 50px;
+  padding: 0px 50px;
   background-color: ${({ theme }) => theme.colors.mainBackground};
 `;
 

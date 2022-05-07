@@ -1,15 +1,13 @@
-/// <reference types="cypress" />
-
 describe('Layout', () => {
   beforeEach(() => cy.visit('/'));
-  it('should display a header', () => {
+  it('display a header', () => {
     cy.get('header').should('be.visible');
   });
-  it('should display accessible Mansa logo', () => {
+  it('display accessible Mansa logo', () => {
     cy.get('img').should('be.visible');
     cy.get('[alt="Logo de Mansa"]').should('be.visible');
   });
-  it('should display main content', () => {
+  it('display main content', () => {
     cy.get('main').should('be.visible');
   });
 });
