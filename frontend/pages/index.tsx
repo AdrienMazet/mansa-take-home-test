@@ -7,6 +7,21 @@ import { getBusiness } from 'services/business';
 import { getUser } from 'services/user';
 import styled from 'styled-components';
 
+// TODO
+// button that refetch user profile
+// hook : state + method refetch
+// tests : hook + comp + e2e
+// Use of cy.get('...') on data-cy attributes
+// Normally I would have mocked the API call to retrieve user details
+// And used cy.get('...') on the expected text content (initials, fullname)
+// As the API call is done server side, I would have to mess a bit
+// with the configuration to mock it
+// Test assez léger avec Cypress car pas de mocks
+// if you had to do a second iteration, what would you add or improve? Storybook, cypress mocks
+
+// avant de livrer : readme, lint, test & deploy + check coverage
+// extract main page container ?
+
 type HomeProps = {
   user: User;
   business: Business;

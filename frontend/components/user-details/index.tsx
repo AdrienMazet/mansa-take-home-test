@@ -1,3 +1,4 @@
+import useUser from 'hooks/useUser';
 import styled from 'styled-components';
 import { getFormattedFullName, getInitials } from 'utils/user';
 import Avatar from './Avatar';
@@ -13,11 +14,17 @@ const Section = styled.section`
   column-gap: 15px;
 `;
 
-const UserDetails: React.FC<UserDetailsProps> = ({ user }) => (
-  <Section>
-    <Avatar>{getInitials(user.firstName, user.lastName)}</Avatar>
-    <Username username={getFormattedFullName(user.firstName, user.lastName)} />
-  </Section>
-);
+const UserDetails: React.FC<UserDetailsProps> = ({ user: initialUser }) => {
+  const { user, refetchUser } = useUser(initialUser);
+  return (
+    <Section>
+      <Avatar>{getInitials(user.firstName, user.lastName)}</Avatar>
+      <Username
+        username={getFormattedFullName(user.firstName, user.lastName)}
+      />
+      <button onClick={refetchUser}>Refetch user</button>
+    </Section>
+  );
+};
 
 export default UserDetails;
