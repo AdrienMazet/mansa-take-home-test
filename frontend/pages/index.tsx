@@ -8,7 +8,7 @@ import { getUser } from 'services/user';
 import styled from 'styled-components';
 
 // TODO
-// Accounts : test unit & test e2e
+// Accounts : test e2e
 // Pour accounts : pagination pour custom hook ?
 // check hook swr
 
