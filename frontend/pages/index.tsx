@@ -11,7 +11,6 @@ import styled from 'styled-components';
 // Accounts : CSS table + Comp + + test + responsive + accessibility + perf
 // Pour accounts : pagination pour custom hook ?
 // check hook swr
-// tester la page index.tsx et_app.tsx ? !
 
 // Use of cy.get('...') on data-cy attributes
 // Normally I would have mocked the API call to retrieve user details
