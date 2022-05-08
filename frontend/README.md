@@ -2,6 +2,29 @@
 <h1 align="center">Mansa's Kanedama</h1>
 <p align="center">Take home test to <b>join us</b> 💜</p>
 
+## Implementation by Adrien Mazet
+
+Deployed app is available [here](https://mansa-take-home-test.vercel.app/)
+
+Stack : TypeScript, React, Next.js, Styled-Components, Jest, React Testing Library (+ React Hooks), Cypress
+
+How long did I take to complete the test ? ~10 hours over 15 days
+
+If I had to do a second iteration I would :
+
+- Mock network calls made on the server side for my E2E tests. Right now they are a bit empty as I don't check that the values received via the API are the ones displayed. I only check that some elements are displayed, with a query on the text content or data-cy attributes.
+
+- Make some components a bit more generic and reusable, and use Storybook to mess with them in isolation.
+
+### Command line
+
+Install dependencies : `npm install`  
+Run the app in development mode : `npm run dev`  
+Run tests : `npm run test`  
+Run E2E tests : `npm run test:e2e:headless`
+
+*It seems that @testing-library/react-hooks does not support React 18 yet. There might be some related errors logged in the console while running tests.*
+
 ## The Mission
 
 Your mission, should you accept it, is to create a dashboard-like UI, where we can find:

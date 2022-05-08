@@ -9,7 +9,7 @@
     "lint": "next lint",
     "cypress": "cypress open",
     "cypress:headless": "cypress run",
-    "test": "jest --watch",
+    "test": "jest --coverage",
     "test:e2e": "npm run build && start-server-and-test start http://localhost:3000 cypress",
     "test:e2e:headless": "npm run build && start-server-and-test start http://localhost:3000 cypress:headless"
   },
